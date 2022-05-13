@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+    <div class="col-xs-6">
+<div class="panel panel-default">
+  
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-12"> <a href="" class=""
+                *ngFor="let contact of contactDetail">
+               <h1>{{contact.name}}</h1> 
+               </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6" class="pull-right">
+                
+                    <button class="btn btn-success " type="submit">Edit</button>
+                    <button class="btn btn-danger" type="button">Delete</button>
+            </div>
+            <div class="col-xs-6" class="mx"> <a *ngFor="let contact of contactDetail">
+        
+                    <img
+                      src="{{contact.imageUrl}}"
+                      alt="{{contact.name}}"
+                      class="img-responsive"
+                      style="max-height: 50px;">
+                      </a>
+                      
+            </div>
+        </div>
+    </div>
+    
+    <div class="panel-body">
+        <div class="row"  class="list-group-item clearfix">
+            <div class="col-xs-12 col-sm-12 col-lg-12"> <a *ngFor="let contactd of contactDetail">
+                <p>Email: {{contactd.email}}</p>
+                <p>Phone:{{contactd.phone}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+  </div>
+  </div>
